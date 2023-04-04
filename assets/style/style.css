@@ -1,0 +1,164 @@
+:root {
+  --header-color: #000;
+  --h1-color: #393c41;
+  --h2-color: #5c5d61;
+  --btn-dark-bg: rgba(23 ,26, 32, 0.8);
+  --btn-light-bg: rgba(255, 255, 255, 0.65)
+  --btn-dark-color: #fff; 
+  --btn-light-color: #000;
+}
+
+@font-face {
+  font-family: GothanMedium;
+  src: url(../fonts/GothamMedium.otf);
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(../fonts/GothamBookRegular.otf);
+}
+title {
+  width: 3px;
+}
+body {
+  font-family: 'GothanMedium', Helvetica, Arial;
+  font-size: 14px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header ul, li {
+  list-style: none;
+}
+
+header .leftside .Logo {
+  width: 120px;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+header .middle ul{
+  padding-left: 100px;  
+  display: flex;
+}
+header .middle li {
+  margin: 0 10px;
+  
+  padding: 0 5px;
+}
+header .middle a{
+  text-decoration: none;
+  color: #181B21;
+  text-transform: capitalize;
+}
+header .rightside ul {
+  display: flex;
+}
+header .rightside li {
+  margin: 0px 10px;
+  padding: 2px;
+}
+header .rightside a {
+  text-decoration: none;
+  color: var(--header-color);
+  text-transform: capitalize;
+}
+header .menu--icon {
+  width: 18px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+header .menu--icon div {
+  height: 2px;
+  background-color: var(--header-color);
+}
+
+main {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+main .info {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main h1 {
+  padding: 5px;
+   margin: 0;
+   font-size: 40px;
+   font-weight: normal;
+   color: var(--h1-color);
+}
+main h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'GothanBook' helvetica, Arial;
+  color: var(--h2-color);
+} 
+main h2 a{
+  color: var(--h1-color);
+}
+
+/* Parte de baixo d*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+}
+footer .buttons--area {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+
+}
+footer .buttons--area a {
+  display: block;
+  padding: 13px;
+  width: 230px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  
+}
+footer .btn--dark {
+    color: #ffffff;
+    background: #171a20cc;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+footer .btn--light {
+  color: #393c41;
+  background: #FFFFFFA6;
+  background: brightness(0.5);
+  padding: 10px;
+  border-radius: 50px;
+
+}
+footer .arrow-area {
+  display: flex;
+  justify-content:center;
+}
+footer .down {
+  max-width: 25px;
+}
